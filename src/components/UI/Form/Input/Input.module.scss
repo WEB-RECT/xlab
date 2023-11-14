@@ -1,0 +1,36 @@
+
+.block {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #4F27BF;
+    background: transparent;
+    padding: 20px 24px;
+    color: #1C1C1E;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s;
+    outline: none;
+}
+.inputError {
+    border: 3px solid red;
+}
+
+.blockErrorText {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .input {
+        border-width: 2px;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    .inputError {
+        border-width: 2px;
+    }
+}

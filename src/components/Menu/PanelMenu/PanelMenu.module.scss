@@ -1,0 +1,142 @@
+$spaceMenu: 32px;
+
+.menu {
+    width: 100%;
+    height: 100%;
+    padding: 24px $spaceMenu;
+    border-right: 1px solid rgba(2, 0, 96, 0.25);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .topClose {
+        display: none;
+    }
+}
+
+.content {
+    width: calc(100% + $spaceMenu * 2);
+    margin-left: calc(-1 * $spaceMenu);
+}
+
+.contentList {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0 $spaceMenu;
+    &.itemActive {
+        .itemWrapperArrow {
+            transform: rotate(180deg);
+        }
+    }
+    &.itemPageActive {
+        .itemWrapper {
+            &::before {
+                opacity: 100%;
+            }
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .itemWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        &::before {
+            content: '';
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            right: -$spaceMenu;
+            top: 0;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #4F27BF;
+            opacity: 0;
+            transition: .3s;
+        }
+        .itemWrapperLeft {
+            display: flex;
+            align-items: center;
+        }
+        .itemWrapperArrow {
+            width: 100%;
+            min-width: 15px;
+            max-width: 15px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s;
+        }
+    }
+    .itemIcon {
+        width: 100%;
+        max-width: 32px;
+        min-width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+    }
+    .itemText {}
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        display: none;
+        &.menuActive {
+            display: block;
+        }
+    }
+    .top {
+        .topClose {
+            width: 20px;
+            display: block;
+            svg {
+                width: 100%;
+            }
+        }
+    }
+    .item {
+        margin-bottom: 20px;
+        .itemWrapper {
+            .itemWrapperArrow {
+                min-width: 10px;
+                max-width: 10px;
+            }
+        }
+        .itemIcon {
+            max-width: 20px;
+            min-width: 20px;
+            margin-right: 10px;
+        }
+    }
+    .contentList {
+        margin-top: 20px;
+    }
+}

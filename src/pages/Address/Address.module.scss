@@ -1,0 +1,21 @@
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.rowContent {
+    width: 100%;
+    margin-right: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .row {
+        flex-direction: column;
+    }
+    .rowContent {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

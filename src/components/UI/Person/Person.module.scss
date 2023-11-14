@@ -1,0 +1,40 @@
+
+.person {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 48px;
+    min-width: 48px;
+    margin-right: 16px;
+    img {
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    img, svg {
+        width: 100%;
+    }
+}
+
+.name {
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        max-width: 30px;
+        min-width: 30px;
+    }
+    .name {
+        display: none;
+    }
+}

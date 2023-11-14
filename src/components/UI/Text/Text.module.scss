@@ -1,0 +1,40 @@
+
+.text {
+    color: #1C1C1E;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.titlePanelMenu {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.namePerson {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.errorText {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}

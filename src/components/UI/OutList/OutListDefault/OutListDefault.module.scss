@@ -1,0 +1,28 @@
+
+.block {
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(2, 0, 97, 0.25);
+}
+
+.blockTitle {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.blockContent {
+    width: 100%;
+}
+.blockContentItem {
+    padding: 16px 0;
+    width: 100%;
+    border-bottom: 1px solid #D7D7D7;
+    &:first-child {
+        border-top: 1px solid #D7D7D7;
+    }
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
