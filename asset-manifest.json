@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/xlab/static/css/main.82af191d.css",
-    "main.js": "/xlab/static/js/main.a1e525cf.js",
+    "main.js": "/xlab/static/js/main.30adf698.js",
     "index.html": "/xlab/index.html",
     "main.82af191d.css.map": "/xlab/static/css/main.82af191d.css.map",
-    "main.a1e525cf.js.map": "/xlab/static/js/main.a1e525cf.js.map"
+    "main.30adf698.js.map": "/xlab/static/js/main.30adf698.js.map"
   },
   "entrypoints": [
     "static/css/main.82af191d.css",
-    "static/js/main.a1e525cf.js"
+    "static/js/main.30adf698.js"
   ]
 }
